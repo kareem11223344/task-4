@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+      @font-face {
+      font-family: Alexandria;
+      src: url("fonts/Alexandria-VariableFont_wght.ttf");
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+          font-family: Alexandria;    
+          direction: rtl;
+          height: 100vh;
+      }
+      .fixed-back img{
+        margin-right: 98%;
+      }
+      #form{
+        display: flex;
+        justify-content: space-between;
+      }
+      input {
+        margin: 0 5px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 50px;
+        border: solid 1px #32b75e7c;
+        box-shadow: 0 0 5px hsla(140, 57%, 46%, 0.378) inset;
+        outline: none;
+        width: 15%;
+        transition: all .2s ease-in-out;
+        border-radius: 3px;
+      }
+      input::selection {
+        background: transparent;
+      }
+      button[type="submit"] {
+        background: #EE8454 !important;
+        border-radius: 100px;
+        border: 1.5px solid rgba(15, 15, 15, 0.10);
+        color: #fff !important;
+        width: 350px;
+        height: 50px;
+        margin: 30px auto;
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <div class="fixed-back">
+        <a href=""><img src="images/solar_square-arrow-left-broken.png" alt=""></a>
+    </div>
+    <div class="wrapper" style="padding-top: 130px;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="title text-center">
+                    <h2> تفعيل الجوال</h2>
+                    <p>تم ارسال كود من 6 ارقام فى رسالة قصيرة الى جوالك</p>
+                </div>
+                <p class="phone-number text-center" style="color: #3378FA;"> 96677776554+</p>
+                <form>
+                    <div id="form">
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                        <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                      </div>
+                    <button type="submit" class="btn">متابعة </button>
+                  </form>
+                <p style="color: #3378FA; font-weight: 400;
+                font-size: 12px; text-align: center; cursor: pointer;">أعادة ارسال كود التفعيل</p>
+               
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+</body>
+</html>
